@@ -1,0 +1,65 @@
+> 
+> amostra1 = c(215,190,282,186,184,231,240,230)
+> amostra2 = c(178,219,166,199,221,176,225,213)
+> amostra1
+[1] 215 190 282 186 184 231 240 230
+> amostra2
+[1] 178 219 166 199 221 176 225 213
+> t.test(amostra1,amostra2,alternative="two.sided")
+
+        Welch Two Sample t-test
+
+data:  amostra1 and amostra2
+t = 1.3951, df = 12.505, p-value = 0.1873
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -11.16539  51.41539
+sample estimates:
+mean of x mean of y 
+  219.750   199.625 
+
+> t.test(amostra1,amostra2,alternative="two.sided")
+
+        Welch Two Sample t-test
+
+data:  amostra1 and amostra2
+t = 1.3951, df = 12.505, p-value = 0.1873
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -11.16539  51.41539
+sample estimates:
+mean of x mean of y 
+  219.750   199.625 
+
+> 
+> t.test(amostra1,amostra2,alternative="greater")
+
+        Welch Two Sample t-test
+
+data:  amostra1 and amostra2
+t = 1.3951, df = 12.505, p-value = 0.09364
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ -5.499246       Inf
+sample estimates:
+mean of x mean of y 
+  219.750   199.625 
+
+> t.test(amostra1,amostra2,alternative="less")
+
+        Welch Two Sample t-test
+
+data:  amostra1 and amostra2
+t = 1.3951, df = 12.505, p-value = 0.9064
+alternative hypothesis: true difference in means is less than 0
+95 percent confidence interval:
+     -Inf 45.74925
+sample estimates:
+mean of x mean of y 
+  219.750   199.625 
+
+> amostra1
+[1] 215 190 282 186 184 231 240 230
+> amostra2
+[1] 178 219 166 199 221 176 225 213
+> 
